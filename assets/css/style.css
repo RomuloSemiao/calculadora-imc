@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #310038;
+  --last-color: #270286;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Merriweather', Georgia;
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  border-radius: 8px;
+  background: linear-gradient(-180deg, var(--last-color) 0%, var(--primary-color) 50%);
+  padding: 20px;
+}
+
+form label, form input, form button{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form input{
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus{
+  outline: 3px solid var(--last-color);
+}
+
+form button{
+  border: 2px solid #000;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 700px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover{
+  background-color: var(--last-color);
+}
+
+.listas{
+  display: flex;
+  justify-content: flex-start;
+}
+.listas p{
+  margin: 5px auto;
+}
+
+.imc{
+  margin-right: 100px;
+}
+
+.paragrafo-resultado, .bad{
+  background-color: #270286;
+  padding: 10px 20px;
+}
+
+.bad{
+  background-color: red;
+}
